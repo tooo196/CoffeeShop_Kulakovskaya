@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактная информация магазина">
+  <meta name="keywords" content="кофе, контакты, магазин">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <title>Контакты - Кофейный магазин</title>
+</head>
+<body>
+<header style="text-align: center;">
+  <h1>Контакты</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="About.html">О нас</a></li>
+      <li><a href="Products.html">Продукты</a></li>
+      <li><a href="News.html">Новости</a></li>
+      <li><a href="Contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-info">
+
+    <h2 style="text-align: center;">Свяжитесь с нами!</h2>
+
+    <form action="#" method="post">
+      <label for="name">Имя отправителя:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Почтовый ящик отправителя:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Номер телефона:</label><br>
+      <input type="tel" placeholder="+7хххххххххх" pattern="+7[0-9]{10}" id="phone" name="phone" maxlength="12" required><br><br>
+
+      Как обращаться к пользователю в дальнейшем:<br>
+      <input type="radio" id="male" name="gender" value="Уважаемый">
+      <label for="male">Уважаемый</label><br>
+      <input type="radio" id="female" name="gender" value="Уважаемая">
+      <label for="female">Уважаемая</label><br><br>
+
+      <p>Тематика письма:
+        <select name="subject">
+          <option value="1">Жалоба</option>
+          <option value="2">Предложения</option>
+          <option value="3">Дружба</option>
+          <option value="4">Совместный проект</option>
+        </select>
+      </p>
+
+      <label for="message">Сообщение:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+      Прикрепить файл:<br>
+      <input type="file" id="file" name="file"><br><br>
+
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">Согласие на обработку персональных данных.</label><br><br>
+
+      <button type="submit">Отправить письмо</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Кофейный магазин</p>
+</footer>
+</body>
+</html>
